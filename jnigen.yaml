@@ -1,0 +1,16 @@
+android_sdk_config:
+  add_gradle_deps: true
+  add_gradle_sources: true
+
+output:
+  c:
+    library_name: android_utils
+    path: src/android_utils/
+  dart:
+    path: lib/android_utils.dart
+    structure: single_file
+
+source_path:
+  - "android/app/src/main/java"
+classes:
+  - "com.example.flutter_jni_demo.SecurityUtils" # from source_path
